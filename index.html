@@ -122,7 +122,55 @@
 
     <input type="button" value="Show Alert" />
 
-    <hr>
+    <hr />
 
+    <h3>
+      What Is Client-Side Form Validation in HTML Forms, and What Are Some
+      Examples?
+    </h3>
+    <form action="">
+      <label for="email">Email Address (Required field):</label>
+      <input
+        required
+        type="email"
+        name="email"
+        id="email"
+        minlength="4"
+        maxlength="64"
+      />
+      <button type="submit">Submit Form</button>
+    </form>
+
+    <hr />
+
+    <h3>What Are the Different Form States, and Why Are They Important?</h3>
+
+    <input
+      readonly
+      type="email"
+      name="email"
+      id="email"
+      value="example@email.com"
+    />
+
+    <h3>feedback form</h3>
+
+    <fieldset>
+          <legend>Personal Information</legend>
+          <label for="full-name">Name (required):</label>
+          <input type="text" id="full-name" name="name" placeholder="Ex. John Doe" required size="20">
+
+          <label for="email">Email address (required):</label>
+          <input
+            placeholder="example@email.com"
+            required
+            id="email"
+            type="email"
+            name="email"
+            size="20"
+          />
+          <label for="age">Age (optional):</label>
+          <input type="number" name="age" id="age" min="3" max="100" />
+        </fieldset>
   </body>
 </html>
